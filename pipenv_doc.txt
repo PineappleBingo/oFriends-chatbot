@@ -1,0 +1,13 @@
+# Locate pipenv interpreter 
+pipenv --py
+
+# Install packages from Pipfile / or create new one
+pipenv install
+
+pipenv sync
+
+# activate pipenv
+pipenv shell
+
+# deactivate pipenv
+exit

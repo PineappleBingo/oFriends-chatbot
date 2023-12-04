@@ -1,0 +1,5 @@
+.env
+
+Data/
+logs/
+.chroma/
