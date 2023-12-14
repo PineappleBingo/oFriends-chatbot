@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 decouple = "*"
-langchain = "*"
 streamlit = "*"
-langflow = "*"
+beautifulsoup4 = "*"
+embedchain = "*"
 
 [dev-packages]
 
