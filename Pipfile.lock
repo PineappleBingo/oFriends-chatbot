@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4913bae806c134fd27b6d724cc8412c4b4a20f73fbff6fb24aa7d0daa3c5bd56"
+            "sha256": "ad29c7347f3640877bdad8b3672908058018ce10610cb6729aae89b350a99100"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -391,14 +391,6 @@
             ],
             "markers": "python_version < '3.13' and python_version >= '3.7'",
             "version": "==0.5.14"
-        },
-        "decouple": {
-            "hashes": [
-                "sha256:c253c1cc62b76e9720a066f334552548c6de1884bc3bdf456ddb62d61b867b09"
-            ],
-            "index": "pypi",
-            "markers": "python_version >= '3.7'",
-            "version": "==0.0.7"
         },
         "deprecated": {
             "hashes": [
@@ -1688,6 +1680,14 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.8.2"
+        },
+        "python-decouple": {
+            "hashes": [
+                "sha256:ba6e2657d4f376ecc46f77a3a615e058d93ba5e465c01bbe57289bfb7cce680f",
+                "sha256:d0d45340815b25f4de59c974b855bb38d03151d81b037d9e3f463b0c9f8cbd66"
+            ],
+            "index": "pypi",
+            "version": "==3.8"
         },
         "python-dotenv": {
             "hashes": [
