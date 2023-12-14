@@ -30,6 +30,6 @@ def scrape_data(url):
         print(f"Twitter Spaces Link: {href}")
 
 
-if __name__ == "__main__":
-    url = "https://oland.fun/2023-07-14-epic-games-%f0%9f%9f%a5%f0%9f%9f%a9%f0%9f%9f%a8-auction-boosters-land-auctions-and-the-plan-twitter/"
-    scrape_data(url)
+url = "https://oland.fun/2023-07-14-epic-games-%f0%9f%9f%a5%f0%9f%9f%a9%f0%9f%9f%a8-auction-boosters-land-auctions-and-the-plan-twitter/"
+
+scrape_data(url)
