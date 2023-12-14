@@ -8,6 +8,7 @@ streamlit = "*"
 beautifulsoup4 = "*"
 embedchain = "*"
 python-decouple = "*"
+requests = "*"
 
 [dev-packages]
 

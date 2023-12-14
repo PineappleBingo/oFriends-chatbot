@@ -7,9 +7,15 @@ OPENAI_API_KEY = config("OPENAI_API_KEY")
 
 app = App()
 
-app.add("https://en.wikipedia.org/wiki/Elon_Musk")
-app.add("https://www.forbes.com/profile/elon-musk")
+
+app.add("https://overline.network/")
+app.add("https://overline.network/oland")
+
+# youtube
+# https://www.youtube.com/watch?v=oQsEEdNxVOg&t=2s
+
+
 # app.add("path/to/file/elon_musk.pdf")
 
-print(app.query("What is the net worth of Elon Musk today?"))
+print(app.query("What is oland?"))
 # Answer: The net worth of Elon Musk today is $258.7 billion.
