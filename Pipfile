@@ -10,6 +10,8 @@ embedchain = "*"
 python-decouple = "*"
 requests = "*"
 pypdf2 = "*"
+requests-html = "*"
+selenium = "*"
 
 [dev-packages]
 
