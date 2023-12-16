@@ -12,6 +12,13 @@ requests = "*"
 pypdf2 = "*"
 requests-html = "*"
 selenium = "*"
+langchain = "*"
+python-dotenv = "*"
+faiss-cpu = "*"
+openai = "*"
+huggingface-hub = "*"
+instructorembedding = "*"
+sentence-transformers = "*"
 
 [dev-packages]
 
