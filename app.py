@@ -20,6 +20,17 @@ def get_pdf_text(pdf_docs):
     return text
 
 
+def text_correction(text):
+    # 11-26-23
+    text.replace("Grok", "Craig")
+    text.replace("O routers", "oRouters")
+    # 12-7-23
+    text.replace("O router", "oRouter")
+
+    # 9-9-23
+    text.replace("몭", "fl")
+
+
 def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(
         separator="\n", chunk_size=1000, chunk_overlap=150, length_function=len
@@ -96,13 +107,14 @@ def main():
             with st.spinner("Processing"):
                 # get pdf text
                 raw_text = get_pdf_text(pdf_docs)
+                st.write(raw_text)
                 # get text chunk
-                text_chunks = get_text_chunks(raw_text)
-                st.write(text_chunks)
-                # create vector store
-                vectorstore = get_vectorStore(text_chunks)
-                # create conversation chain
-                st.session_state.conversation = get_converstaion_chain(vectorstore)
+                # text_chunks = get_text_chunks(raw_text)
+                # st.write(text_chunks)
+                # # create vector store
+                # vectorstore = get_vectorStore(text_chunks)
+                # # create conversation chain
+                # st.session_state.conversation = get_converstaion_chain(vectorstore)
 
 
 if __name__ == "__main__":
