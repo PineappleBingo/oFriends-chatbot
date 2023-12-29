@@ -1,7 +1,9 @@
 import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
+from langchain.text_splitter import create_documents
 from langchain.text_splitter import CharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chat_models import ChatOpenAI
@@ -35,6 +37,22 @@ def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(
         separator="\n", chunk_size=1000, chunk_overlap=150, length_function=len
     )
+    chunks = text_splitter.split_text(text)
+    return chunks
+
+def get_text_chunks_recur(text):
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size = 1000,
+        chunk_overlap  = 150,
+        length_function = len,
+        is_separator_regex = False,
+    )
+    texts = text_splitter.create_documents([state_of_the_union])
+    print(texts[0])
+    print(texts[1])
+    test_chunks = text_splitter.split_text(state_of_the_union)[:2]
+    print(test_chunks)
+    
     chunks = text_splitter.split_text(text)
     return chunks
 
